@@ -1,0 +1,179 @@
+/*==========================
+  VARIABLES
+==========================*/
+:root {
+  --color-background-top: #bac9d6;
+  --color-background-bottom: #ffffff;
+  --color-title: #84c8ea;
+  --color-description: #595959;
+}
+
+/*==========================
+  CSS RESET
+ ==========================*/
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  min-width: 300px;
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/*==========================
+  TOP
+ ==========================*/
+.top {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--color-background-top);
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 767px) {
+  .top {
+    height: 360px;
+    flex: 4;
+  }
+}
+
+.iphone {
+  align-self: flex-end;
+  height: 600px;
+  width: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .iphone {
+    height: 360px;
+  }
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  bottom: 50%;
+  max-width: 200px;
+  width: auto;
+  animation: slide-in-bottom-fade 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 200ms;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    max-width: 120px;
+    bottom: 60%;
+  }
+}
+
+.separator {
+  width: 100%;
+  margin-top: -3px;
+  height: 3px;
+  background: url(./images/shadow-pattern.png) 0 0;
+  opacity: 0.4;
+}
+
+/*==========================
+  BOTTOM
+ ==========================*/
+.bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-background-bottom);
+}
+
+@media only screen and (max-width: 767px) {
+  .bottom {
+    flex: 6;
+  }
+}
+
+.content {
+  max-width: 600px;
+  margin: 20px;
+}
+
+.content h1 {
+  text-align: center;
+  color: var(--color-title);
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 376px) {
+  .content h1 {
+    font-size: 26px;
+  }
+}
+
+.content h3 {
+  text-align: center;
+  color: var(--color-description);
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 376px) {
+  .content h3 {
+    font-size: 18px;
+  }
+}
+
+.badges {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.badges img {
+  max-height: 40px;
+  margin: 10px;
+}
+
+/*==========================
+  KEYFRAMES
+ ==========================*/
+@keyframes slide-in-bottom-fade {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

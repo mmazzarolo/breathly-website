@@ -1,0 +1,32 @@
+{
+  "name": "breathly-website",
+  "version": "1.0.0",
+  "description": "Breathly App Website",
+  "scripts": {
+    "build": "gulp",
+    "start": "serve build",
+    "reset": "rm -rf node_modules/ && yarn cache clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmazzarolo/breathly-website.git"
+  },
+  "author": "Mazzarolo Matteo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmazzarolo/breathly-website/issues"
+  },
+  "homepage": "https://breathly.app",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "7.1.2",
+    "cssnano": "3.10.0",
+    "gulp": "3.9.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-postcss": "7.0.0",
+    "gulp-sourcemaps": "2.6.1",
+    "postcss-custom-properties": "6.1.0",
+    "postcss-flexbugs-fixes": "3.2.0",
+    "serve": "^10.1.2"
+  }
+}
