@@ -4,6 +4,7 @@ const sourcemaps = require("gulp-sourcemaps");
 const autoprefixer = require("autoprefixer");
 const postcssCustomProperties = require("postcss-custom-properties");
 const cssnano = require("cssnano");
+const imagemin = require("gulp-imagemin");
 
 gulp.task("handleCssFile", function() {
   return gulp
@@ -22,7 +23,7 @@ gulp.task("handleImages", function() {
   return gulp
     .src("src/images/*")
     .pipe(imagemin())
-    .pipe(gulp.dest(".build/images"));
+    .pipe(gulp.dest("./build/images"));
 });
 
 gulp.task("copyRemainingFiles", function() {
