@@ -28,7 +28,7 @@ gulp.task("handleImages", function() {
 
 gulp.task("copyRemainingFiles", function() {
   return gulp
-    .src(["src/favicons/**/*", "src/manifest.json"], {
+    .src(["src/favicons/**/*", "src/manifest.json", "src/privacy"], {
       base: "src"
     })
     .pipe(gulp.dest("./build"));
