@@ -14,7 +14,7 @@ You can use Breathly for daily relaxation and breath training: just choose a bre
 
 <p align="center" margin-bottom="0">
   <a href="https://breathly.app">
-    <img alt="Breathly" width="420" height="auto" src="./.github/screenshot.png">
+    <img alt="Breathly" width="820" height="auto" src="./.github/screenshot.png">
   </a>
 </p>
 
@@ -32,7 +32,9 @@ The website doesn't use JavaScript (no, I'm not using Google Analytics).
 
 ### Acknowledgements
 
-I used [this mockup](https://gumroad.com/l/edFPQ) from [Lstore design goodies](https://gumroad.com/lstore) to create the top image.
+I used [this mockup](https://gumroad.com/l/edFPQ) from [Lstore design goodies](https://gumroad.com/lstore) to create the top image.  
+
+The Breahly landing page is deployed using [Netlify](https://app.netlify.com).  
 
 ## Contributing
 
