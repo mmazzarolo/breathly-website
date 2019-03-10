@@ -64,7 +64,7 @@ body {
 @media only screen and (max-width: 767px) {
   .top {
     height: 360px;
-    flex: 4;
+    flex: 3;
   }
 }
 
@@ -76,7 +76,7 @@ body {
 
 @media only screen and (max-width: 767px) {
   .iphone {
-    height: 360px;
+    height: 320px;
   }
 }
 
@@ -92,8 +92,8 @@ body {
 
 @media only screen and (max-width: 767px) {
   .logo {
-    max-width: 120px;
-    bottom: 60%;
+    max-width: 100px;
+    bottom: 68%;
   }
 }
 
@@ -149,7 +149,7 @@ body {
 
 @media only screen and (max-width: 376px) {
   .content h1 {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 
@@ -161,7 +161,7 @@ body {
 
 @media only screen and (max-width: 376px) {
   .content h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
