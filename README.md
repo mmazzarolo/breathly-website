@@ -3,7 +3,6 @@
 # Breathly <img src="./.github/icon-rounded.png" width="110" align="left">
 
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 &nbsp;
 
