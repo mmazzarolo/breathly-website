@@ -18,9 +18,6 @@ You can use Breathly for daily relaxation and breath training: just choose a bre
 </p>
 
 <p align="center" margin-bottom="0">
-  <a href="https://breathly.app">
-    <img alt="Breathly" width="820" height="auto" src="./.github/screenshot.png">
-  </a>
   <a href="https://breathly.app">Breathly app landing page</a>
 </p>
 
