@@ -6,8 +6,8 @@
 
 &nbsp;
 
-Breathly is a React-Native mobile app that allows you to focus on your breathing.
-You can use Breathly for daily relaxation and breath training: just choose a breathing technique and focus on the guided exercise.
+Breathly is a React-Native mobile app that allows you to focus on your breathing ([source code here](https://github.com/mmazzarolo/breathly-app)).
+You can use Breathly for daily relaxation and breath training: just choose a breathing technique and focus on the guided exercise.  
 
 &nbsp;
 
@@ -15,6 +15,13 @@ You can use Breathly for daily relaxation and breath training: just choose a bre
   <a href="https://breathly.app">
     <img alt="Breathly" width="820" height="auto" src="./.github/screenshot.png">
   </a>
+</p>
+
+<p align="center" margin-bottom="0">
+  <a href="https://breathly.app">
+    <img alt="Breathly" width="820" height="auto" src="./.github/screenshot.png">
+  </a>
+  <a href="https://breathly.app">Breathly app landing page</a>
 </p>
 
 ## Overview
