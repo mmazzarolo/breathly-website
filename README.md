@@ -33,7 +33,7 @@ The website can be build using `yarn run build`, which runs a simple Gulp script
 
 The website doesn't use JavaScript (no, I'm not using Google Analytics).
 
-### Acknowledgements
+## Acknowledgements
 
 I used [this mockup](https://gumroad.com/l/edFPQ) from [Lstore design goodies](https://gumroad.com/lstore) to create the top image.  
 
