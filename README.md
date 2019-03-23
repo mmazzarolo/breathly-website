@@ -25,13 +25,13 @@ You can use Breathly for daily relaxation and breath training: just choose a bre
 
 In this repository you'll be able to find the source code of the Breathly app website.
 
-The website can be build using `yarn run build`, which runs a simple Gulp script that takes care of:
+The Breathly website can be build using `yarn run build`, which runs a simple Gulp script that takes care of:
 
 - Minifying the CSS code and parsing the PostCSS features
 - Minifying the website images
 - Move all the files in the `build` directory
 
-The website doesn't use JavaScript (no, I'm not using Google Analytics).
+The Breathly website doesn't use JavaScript (no, I'm not using Google Analytics).
 
 ## Acknowledgements
 
