@@ -2,10 +2,18 @@
   VARIABLES
 ==========================*/
 :root {
-  --color-background-top: #bac9d6;
-  --color-background-bottom: #ffffff;
-  --color-title: #84c8ea;
-  --color-description: #595959;
+  --color-background-root: #F7FBFE;
+  --color-background-top-1: #81C6E8;
+  --color-background-top-2: #BFE1F2;
+  --color-text-bottom: #9D9EB0;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+    --color-background-top-1: #111726;
+    --color-background-top-2: #1A223A;
+    --color-text-bottom: #9D9EB0;
+	}
 }
 
 /*==========================
@@ -39,73 +47,191 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+
+/*==========================
+  TOP
+ ==========================*/
 .root {
   display: flex;
   flex-direction: column;
   height: 100%;
   width: 100%;
-  justify-content: center;
-  align-items: center;
+  background: var(--color-background-root);
 }
 
-/*==========================
-  TOP
- ==========================*/
+.stars {
+  background: url(./images/stars.png);
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
 .top {
   display: flex;
-  flex: 1;
+  flex: 2;
+  flex-direction: column;
+  width: 100%;
+  background-image: linear-gradient(var(--color-background-top-1), var(--color-background-top-2));
+  position: relative;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  background-color: var(--color-background-top);
-  overflow: hidden;
 }
 
-@media only screen and (max-width: 767px) {
-  .top {
-    height: 360px;
-    flex: 3;
-  }
-}
-
-.iphone {
-  align-self: flex-end;
-  height: 600px;
-  width: auto;
-}
-
-@media only screen and (max-width: 767px) {
-  .iphone {
-    height: 320px;
-  }
+.wave {
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  background-image: url(./images/wave.svg);
+  background-position: center bottom;
+  background-repeat: repeat-x;
+  height: 200px;
+  width: 110%;
+  pointer-events: none;
 }
 
 .logo {
   display: flex;
-  position: absolute;
-  bottom: 50%;
-  max-width: 200px;
+  max-width: 140px;
   width: auto;
-  animation: slide-in-bottom-fade 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 200ms;
+  position: absolute;
+  top: -10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 414px) {
   .logo {
-    max-width: 100px;
-    bottom: 68%;
+    top: -12px;
+    max-width: 110px;
   }
 }
 
-.separator {
-  width: 100%;
-  margin-top: -3px;
-  height: 3px;
-  background: url(./images/shadow-pattern.png) 0 0;
-  opacity: 0.4;
+.top h1 {
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  font-size: 2.4rem;
+  opacity: 0.9;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1)
 }
 
-.github-corner:hover .octo-arm {
+@media (max-width: 840px) {
+  .top h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .top h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .top h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.top h2 {
+  max-width: 800px;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.1)
+}
+
+@media (max-width: 840px) {
+  .top h2 {
+    max-width: 90%;
+    font-size: 1.6rem;
+  }
+}
+  
+@media (max-width: 414px) {
+  .top h2 {
+    max-width: 90%;
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .top h2 {
+    font-size: 1.1rem;
+  }
+}
+
+.badges {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.badges img {
+  max-height: 50px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: box-shadow 200ms;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 414px) {
+  .badges img {
+    max-height: 40px;
+  }
+}
+
+.badges img:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.badges img:active {
+  transform: scale(0.98);
+}
+
+.bottom {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom h3 {
+  text-align: center;
+  line-height: 42px;
+  font-weight: 300;    
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: var(--color-text-bottom);
+}
+
+@media (max-width: 414px) {
+  .bottom h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 374px) {
+  .bottom h3 {
+    font-size: 1.1rem;
+  }
+}
+
+/*==========================
+  GITHUB CORNER
+ ==========================*/
+ .github-corner:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
 
@@ -118,89 +244,6 @@ body {
   }
 }
 
-/*==========================
-  BOTTOM
- ==========================*/
-.bottom {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-background-bottom);
-}
-
-@media only screen and (max-width: 767px) {
-  .bottom {
-    flex: 6;
-  }
-}
-
-.content {
-  max-width: 600px;
-  margin: 20px;
-}
-
-.content h1 {
-  text-align: center;
-  color: var(--color-title);
-  font-weight: 300;
-}
-
-@media only screen and (max-width: 376px) {
-  .content h1 {
-    font-size: 24px;
-  }
-}
-
-.content h3 {
-  text-align: center;
-  color: var(--color-description);
-  font-weight: 300;
-}
-
-@media only screen and (max-width: 376px) {
-  .content h3 {
-    font-size: 16px;
-  }
-}
-
-.badges {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.badges img {
-  max-height: 40px;
-  margin: 10px;
-}
-
-/*==========================
-  KEYFRAMES
- ==========================*/
-@keyframes slide-in-bottom-fade {
-  0% {
-    transform: translateY(30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes octocat-wave {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  20%,
-  60% {
-    transform: rotate(-25deg);
-  }
-  40%,
-  80% {
-    transform: rotate(10deg);
-  }
+.github-corner svg {
+  color: var(--color-background-top-1)
 }
